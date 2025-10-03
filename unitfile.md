@@ -25,3 +25,6 @@ User-specific services: ~/.config/systemd/user/
 
 once system file is configured relaod the command by systemctl daemon-reload
 
+# Day 02 
+
+configure the basic python log file as a service and executed and configured the unit file [unit][services][install]
