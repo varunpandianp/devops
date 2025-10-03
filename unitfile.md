@@ -27,4 +27,13 @@ once system file is configured relaod the command by systemctl daemon-reload
 
 # Day 02 
 
-configure the basic python log file as a service and executed and configured the unit file [unit][services][install]
+configure the basic python log file as a service and executed and configured the unit file [unit][services][install] - Ensures service starts at boot in multi-user mode
+
+sudo systemctl daemon-reload 
+
+# Why sudo systemctl daemon-reload is Needed
+
+When you create or modify a new service file (like /etc/systemd/system/myservice.service), systemd (the init system) doesn’t know about your changes yet.
+
+daemon-reload tells systemd:
+👉 “Hey, I added/edited a unit file, please reload your configuration files and update your database of services.”
