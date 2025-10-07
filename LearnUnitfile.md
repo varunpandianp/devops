@@ -36,4 +36,4 @@ sudo systemctl daemon-reload
 When you create or modify a new service file (like /etc/systemd/system/myservice.service), systemd (the init system) doesn’t know about your changes yet.
 
 daemon-reload tells systemd:
-👉 “Hey, I added/edited a unit file, please reload your configuration files and update your database of services.”
+“Hey, I added/edited a unit file, please reload your configuration files and update your database of services.”
